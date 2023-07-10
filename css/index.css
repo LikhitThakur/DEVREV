@@ -1,0 +1,152 @@
+*{
+    font-family: 'Special Elite', sans-serif;
+}
+
+body {
+    background-image: url(../images/book.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Cookie', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 80%;
+}
+
+
+.container {
+    background: rgba(124, 124, 124, 0.296);
+    box-shadow: 0 8px 32px 0 rgba(224, 182, 11, 0.771);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba(43, 37, 37, 0.18);
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    width: 60%;
+    text-align: center;
+  
+}
+
+.heading{
+    font-weight: 500;
+    font-size: 55px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: bold;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+
+.user-admin{
+    display: flex;
+    flex-direction: row;;
+}
+
+@media (max-width: 768px) {
+    .user-admin {
+    flex-direction: column;
+    }
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.options{
+    display: flex;    flex-direction: row;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 200px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: transparent;
+    border-bottom: 1.6px solid #ccc;
+    background-color: transparent;
+}
+
+.form-container button {
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #a09191;
+    background-color: transparent;
+    
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.bt:hover {
+    border: transparent;
+    border-bottom: 1.6px solid #ccc;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-buttons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a img{
+    width: 30px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(255, 255, 255); 
+}
+
+input::placeholder,
+textarea::placeholder {
+
+font-size: medium;
+}
+
+input[type="text"],input[type="email"],input[type="password"]:focus {
+outline: none;
+border: none;
+border: transparent;
+    border-bottom: 1.6px solid #ccc;
+    color: white;
+    /* font-style: italic; */
+    font-size: larger;
+}
